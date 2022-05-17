@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-bg.png');
-  height: 120vh;
+  height: 100%;
   width: 100vw;
   background-size: cover;
 }
@@ -14,14 +14,14 @@
   align-items: center;
   min-width: 70%;
   min-height: 100%;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .random-display-img {
-  margin-top: 20px;
+  margin-top: 10px;
   margin: 20px;
-  width: 50%;
-  height: 30%;
+  width: 70%;
+  height: 50%;
 }
 
 .tab-items-container {
@@ -29,6 +29,7 @@
   flex-direction: row;
   justify-content: space-between;
   list-style-type: none;
+  padding-left: 0;
 }
 
 .images-list-container {
@@ -37,4 +38,73 @@
   justify-content: center;
   flex-wrap: wrap;
   list-style-type: none;
+  padding-left: 0;
+}
+
+.score-card-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-sm-bg.png');
+  height: 60%;
+  width: 80%;
+  align-self: center;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.trophy-image {
+  height: 200px;
+  width: 200px;
+  margin-top: 90px;
+}
+@media screen and (min-width: 768px) {
+  .score-card-container {
+    background-image: url('https://assets.ccbp.in/frontend/react-js/match-game-score-card-lg-bg.png');
+    height: 700px;
+    width: 603px;
+  }
+  .trophy-image {
+    height: 350px;
+    width: 350px;
+    margin-top: 150px;
+  }
+}
+
+.your-score-tag-style {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Consolas';
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-score-tag-style {
+    font-size: 30px;
+  }
+}
+
+.btn-reset {
+  background-color: #cf60c8;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  width: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.reset-style {
+  height: 30px;
+  width: 30px;
+}
+
+.play-again-text {
+  margin-top: 2px;
+  margin-bottom: 0;
 }

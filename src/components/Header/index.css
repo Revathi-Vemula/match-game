@@ -7,18 +7,20 @@
   height: 10vh;
   width: 100vw;
   padding: 10px;
+  margin-top: 0;
 }
 
 .website-logo {
   height: 25px;
   width: 120px;
-  margin-left: 30px;
+  margin-left: 15px;
 }
 
 @media screen and (min-width: 768px) {
   .website-logo {
     height: 40px;
     width: 180px;
+    margin-left: 30px;
   }
 }
 
@@ -31,7 +33,7 @@
 
 .score-style {
   font-family: 'Consolas';
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   margin-top: 0;
   color: #ffffff;
@@ -40,9 +42,9 @@
 .score-value {
   color: #fec653;
   font-family: 'Consolas';
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 800;
-  margin-top: 0;
+  margin-top: 3px;
 }
 
 .timer {

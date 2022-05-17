@@ -9,6 +9,7 @@
   font-size: 20px;
   color: #ffffff;
   padding: 10px;
+  cursor: pointer;
 }
 
 .btn-tab-selected {

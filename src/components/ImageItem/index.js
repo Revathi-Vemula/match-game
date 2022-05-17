@@ -2,10 +2,10 @@ import './index.css'
 
 const ImageItem = props => {
   const {imageDetails, onClickCheckThumbnail} = props
-  const {id, imageUrl, thumbnailUrl, category} = imageDetails
+  const {thumbnailUrl} = imageDetails
 
   const isCorrectThumbnail = () => {
-    onClickCheckThumbnail(id)
+    onClickCheckThumbnail(thumbnailUrl)
   }
 
   return (

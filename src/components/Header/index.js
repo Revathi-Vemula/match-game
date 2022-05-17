@@ -1,17 +1,19 @@
 import './index.css'
 
 const Header = props => {
-  const {imagesList} = props
+  const {score, time} = props
   return (
-    <div className="nav-bar">
-      <img
-        src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
-        className="website-logo"
-        alt="website logo"
-      />
-      <div className="score-time-container">
+    <ul className="nav-bar">
+      <li>
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/match-game-website-logo.png"
+          className="website-logo"
+          alt="website logo"
+        />
+      </li>
+      <li className="score-time-container">
         <p className="score-style">
-          Score: <span className="score-value">0</span>
+          Score: <span className="score-value">{score}</span>
         </p>
         <div className="stopwatch-container">
           <img
@@ -19,10 +21,10 @@ const Header = props => {
             className="timer"
             alt="timer"
           />
-          <p className="score-value">{`${60} Sec`}</p>
+          <p className="score-value">{`${time} Sec`}</p>
         </div>
-      </div>
-    </div>
+      </li>
+    </ul>
   )
 }
 
