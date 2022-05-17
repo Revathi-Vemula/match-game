@@ -1,0 +1,69 @@
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2c0e3a;
+  height: 10vh;
+  width: 100vw;
+  padding: 10px;
+}
+
+.website-logo {
+  height: 25px;
+  width: 120px;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .website-logo {
+    height: 40px;
+    width: 180px;
+  }
+}
+
+.score-time-container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.score-style {
+  font-family: 'Consolas';
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+.score-value {
+  color: #fec653;
+  font-family: 'Consolas';
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 0;
+}
+
+.timer {
+  height: 20px;
+  width: 20px;
+  margin-top: 2px;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .score-value {
+    font-size: 20px;
+  }
+  .score-style {
+    font-size: 20px;
+  }
+}
+
+.stopwatch-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 10px;
+}

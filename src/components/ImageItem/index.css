@@ -1,0 +1,17 @@
+.btn-image {
+  background-color: transparent;
+  border-style: none;
+  outline: none;
+}
+
+.img-thumbnail {
+  height: 70px;
+  width: 70px;
+}
+
+@media screen and (min-width: 768px) {
+  .img-thumbnail {
+    min-height: 120px;
+    min-width: 120px;
+  }
+}
